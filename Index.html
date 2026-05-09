@@ -2,7 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name=<meta name="google-site-verification" content="XXXXXX">"viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Verification (FIXED) -->
+<meta name="google-site-verification" content="XXXXXX">
+
+<!-- Responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Turning Point Rajshahi - Bank Job Coaching</title>
 
 <link rel="stylesheet"
@@ -114,7 +120,7 @@ color:white;
 cursor:pointer;
 }
 
-/* APPLICATION FORM */
+/* APPLICATION */
 
 #applicationPage{
 display:none;
@@ -125,12 +131,6 @@ padding:30px;
 border-radius:20px;
 box-shadow:0 0 20px rgba(0,0,0,0.3);
 margin-top:20px;
-}
-
-#applicationPage h2{
-margin-bottom:20px;
-color:#1d4ed8;
-text-align:center;
 }
 
 /* DASHBOARD */
@@ -242,12 +242,10 @@ color:#1d4ed8;
 
 <div class="inputBox">
 <input type="text" placeholder="Student ID">
-<i class="fa-solid fa-id-card"></i>
 </div>
 
 <div class="inputBox">
 <input type="password" placeholder="Password">
-<i class="fa-solid fa-lock"></i>
 </div>
 
 <div class="inputBox">
@@ -270,39 +268,19 @@ Login
 
 </div>
 
-<!-- APPLICATION FORM -->
+<!-- APPLICATION -->
 
 <div id="applicationPage">
 
 <h2>New Student Application Form</h2>
 
-<div class="inputBox">
-<input type="text" placeholder="Full Name">
-</div>
-
-<div class="inputBox">
-<input type="text" placeholder="Mobile Number">
-</div>
-
-<div class="inputBox">
-<input type="text" placeholder="Father Name">
-</div>
-
-<div class="inputBox">
-<input type="text" placeholder="Mother Name">
-</div>
-
-<div class="inputBox">
-<input type="text" placeholder="Guardian Name">
-</div>
-
-<div class="inputBox">
-<input type="text" placeholder="SSC Result">
-</div>
-
-<div class="inputBox">
-<input type="text" placeholder="HSC Result">
-</div>
+<div class="inputBox"><input type="text" placeholder="Full Name"></div>
+<div class="inputBox"><input type="text" placeholder="Mobile Number"></div>
+<div class="inputBox"><input type="text" placeholder="Father Name"></div>
+<div class="inputBox"><input type="text" placeholder="Mother Name"></div>
+<div class="inputBox"><input type="text" placeholder="Guardian Name"></div>
+<div class="inputBox"><input type="text" placeholder="SSC Result"></div>
+<div class="inputBox"><input type="text" placeholder="HSC Result"></div>
 
 <div class="inputBox">
 <select>
@@ -311,33 +289,20 @@ Login
 </select>
 </div>
 
-<div class="inputBox">
-<input type="text" placeholder="College / University Name">
-</div>
+<div class="inputBox"><input type="text" placeholder="College / University"></div>
+<div class="inputBox"><textarea rows="4" placeholder="Address"></textarea></div>
 
-<div class="inputBox">
-<textarea rows="4" placeholder="Address"></textarea>
-</div>
-
-<button class="loginBtn">
-Submit Application
-</button>
+<button class="loginBtn">Submit Application</button>
 
 </div>
 
-<!-- PORTAL -->
+<!-- DASHBOARD -->
 
 <div id="portalPage">
 
 <div class="top">
-<h2>
-<i class="fa-solid fa-user-graduate"></i>
-Student Dashboard
-</h2>
-
-<button class="logout" onclick="logoutPortal()">
-Logout
-</button>
+<h2>Student Dashboard</h2>
+<button class="logout" onclick="logoutPortal()">Logout</button>
 </div>
 
 <div class="cards">
@@ -345,84 +310,46 @@ Logout
 <div class="card">
 <i class="fa-solid fa-wallet"></i>
 <h3>Monthly Fee</h3>
-<p>Fee must be paid before 5th of every month</p>
-<button class="payBtn">Pay with bKash</button>
+<p>Pay before 5th of every month</p>
+<button class="payBtn">Pay Now</button>
 </div>
 
 <div class="card">
 <i class="fa-solid fa-mobile-screen"></i>
-<h3>Nagad Payment</h3>
+<h3>bKash / Nagad</h3>
 <p>Online Payment Available</p>
-<button class="payBtn">Pay Now</button>
 </div>
 
 <div class="card">
 <i class="fa-solid fa-book"></i>
 <h3>Class Routine</h3>
-<p>Weekly Routine Available</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-square-poll-vertical"></i>
-<h3>Exam Marks</h3>
-<p>Check Exam Marks & Ranking</p>
 </div>
 
 <div class="card">
 <i class="fa-solid fa-file"></i>
 <h3>Exam Result</h3>
-<p>View Detailed Result</p>
 </div>
 
 <div class="card">
 <i class="fa-solid fa-video"></i>
 <h3>Online Class</h3>
-<p>Join Live Classes</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-bell"></i>
-<h3>Notice Board</h3>
-<p>Latest Coaching Notices</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-book-open-reader"></i>
-<h3>Study Materials</h3>
-<p>PDF & Lecture Sheets</p>
 </div>
 
 </div>
 
 <div class="notice">
-
-<h3>
-<i class="fa-solid fa-bullhorn"></i>
-Important Notice
-</h3>
-
-<p>
-• Monthly fee payment deadline: Every month before 5th date. <br><br>
-• Weekly model test every Friday. <br><br>
-• Bank Viva Special Batch admission running now.
-</p>
-
+<h3>Important Notice</h3>
+<p>Monthly fee must be paid before 5th date.</p>
 </div>
 
 <div class="contact">
-
-<h3>
-<i class="fa-solid fa-phone"></i>
-Office & Payment Information
-</h3>
-
+<h3>Office Info</h3>
 <p>
-Office Number: +8801805022828 <br><br>
-bKash Payment Number:01715779067  <br><br>
-Nagad Payment Number:01785329697  <br><br>
-Location: Turning Point Rajshahi Bank Job,MM Tower,kumarpara
+Office: +8801805022828 <br>
+bKash: 01715779067 <br>
+Nagad: 01785329697 <br>
+Location: MM Tower, Kumarpara, Rajshahi
 </p>
-
 </div>
 
 </div>
