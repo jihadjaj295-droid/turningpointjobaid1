@@ -106,7 +106,7 @@
         /* Data Tables / Info Rows */
         .info-row { display: flex; justify-content: space-between; align-items: center; padding: 15px; background: #f8fafc; border-radius: 8px; margin-bottom: 10px; border: 1px solid #f1f5f9; }
         .info-row:hover { border-color: #cbd5e1; }
-        .btn-action { background: var(--white); border: 1px solid #cbd5e1; padding: 5px 12px; border-radius: 5px; font-size: 13px; cursor: pointer; color: var(--accent); font-weight: bold; transition: 0.2s; }
+        .btn-action { background: var(--white); border: 1px solid #cbd5e1; padding: 5px 12px; border-radius: 5px; font-size: 13px; cursor: pointer; color: var(--accent); font-weight: bold; transition: 0.2s; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; }
         .btn-action:hover { background: var(--accent); color: var(--white); }
 
         footer { background: var(--primary); color: var(--text-light); text-align: center; padding: 20px; margin-top: 50px; font-size: 14px; }
@@ -123,14 +123,14 @@
 <body>
 
     <div class="top-header">
-        <div><i class="fa-solid fa-location-dot"></i> Rajshahi Branch,Kumarpara turningpointrajshahi@.com</div>
+        <div><i class="fa-solid fa-location-dot"></i> Rajshahi Branch, Kumarpara turningpointrajshahi@.com</div>
         <div><i class="fa-solid fa-phone"></i> Helpline: +8801805022828</div>
     </div>
 
     <nav>
         <div class="logo">
             <i class="fa-solid fa-graduation-cap"></i>
-        <span>Turning Point Job Aid</span>
+            <span>Turning Point Job Aid</span>
         </div>
         <div class="nav-links">
             <a href="#home">Home</a>
@@ -150,7 +150,7 @@
         <div class="ticker">
             <span><i class="fa-solid fa-bullhorn"></i> Latest Update</span>
             <marquee behavior="scroll" direction="left">
-                📢 ব্যাংক জব স্পেশাল ব্যাচ (BJ-4) ভর্তি চলছে... | পরবর্তী মাসের রুটিন ৩১শে মে পোর্টালে দেওয়া হবে |</marquee>
+                📢 ব্যাংক জব স্পেশাল ব্যাচ (BJ-4) ভর্তি চলছে... | মে মাসের নতুন ক্লাস রুটিন (BJ-03) নোটিশ বোর্ডে দেওয়া হয়েছে। |</marquee>
         </div>
 
         <div class="container">
@@ -161,20 +161,23 @@
                         <div class="card-title">
                             <i class="fa-solid fa-clipboard-list"></i> Academic Notice Board
                         </div>
-                        <div class="notice-item">
-                            <span>1. Class Routine & Schedule - Current Month</span>
-                            <span class="badge new">New</span>
+                        
+                        <div class="notice-item" style="background: #f0f9ff; padding: 10px; border-radius: 8px; border: 1px solid #bae6fd;">
+                            <div>
+                                <strong style="display: block; color: var(--primary);">Class Routine (BJ-03) - May 2026</strong>
+                                <span style="font-size: 12px; color: var(--text-light);">রাজশাহী শাখার বর্তমান মাসের রুটিন</span>
+                            </div>
+                            <a href="1000085863.jpg" download class="btn-action">
+                                <i class="fa-solid fa-download"></i> Download
+                            </a>
                         </div>
+
                         <div class="notice-item">
-                            <span>2. Special Model Test (Written) Instructions</span>
+                            <span>2. Special Model Test Instructions</span>
                             <span class="badge update">Update</span>
                         </div>
                         <div class="notice-item">
                             <span>3. Library Seat Renewal for Next Month</span>
-                            <span class="badge info">Info</span>
-                        </div>
-                        <div class="notice-item">
-                            <span>4. Bank Job Foundation Batch (BJ-4) Admission</span>
                             <span class="badge info">Info</span>
                         </div>
                     </div>
@@ -183,24 +186,14 @@
                         <div class="card-title">
                             <i class="fa-solid fa-wallet"></i> Online Fee Payment
                         </div>
-                        <p style="margin-bottom: 15px; font-size: 14px;">আপনার মাসিক বেতন বা লাইব্রেরি চার্জ পরিশোধ করুন। পেমেন্ট করার সময় রেফারেন্সে অবশ্যই আপনার <b>Student ID</b> ব্যবহার করবেন।</p>
                         <div class="payment-grid">
                             <div class="pay-box bkash">
                                 <i class="fa-solid fa-money-bill-wave"></i>
-                                <span>bKash:01715779067 Payment</span>
+                                <span>bKash: 01715779067</span>
                             </div>
                             <div class="pay-box nagad">
                                 <i class="fa-solid fa-mobile-screen"></i>
-                                <span>Nagad:01785329697 Payment</span>
-                            </div>
-                            <div class="pay-box rocket">
-                                <i class="fa-solid fa-building-columns"></i>
-                                <span>Rocket:01785329697
-                                Payment</span>
-                            </div>
-                            <div class="pay-box upay">
-                                <i class="fa-solid fa-credit-card"></i>
-                                <span>Card / Upay</span>
+                                <span>Nagad: 01785329697</span>
                             </div>
                         </div>
                     </div>
@@ -211,17 +204,14 @@
                         <div class="card-title" style="justify-content: center;">
                             <i class="fa-solid fa-user-graduate"></i> Student Portal
                         </div>
-                        <p style="font-size: 13px; color: #cbd5e1; margin-bottom: 25px;">প্রোফাইল, রুটিন এবং রেজাল্ট দেখতে আপনার রোল নম্বর (Student ID) দিয়ে প্রবেশ করুন।</p>
-                        
+                        <p style="font-size: 13px; color: #cbd5e1; margin-bottom: 25px;">আপনার রোল নম্বর (Student ID) দিয়ে প্রবেশ করুন।</p>
                         <div class="input-group">
                             <i class="fa-solid fa-id-card"></i>
-                            <input type="text" id="studentId" placeholder="Student ID (e.g. 101, 102)">
+                            <input type="text" id="studentId" placeholder="ID (e.g. 101, 103)">
                         </div>
-                        
                         <button class="btn-login" onclick="login()">
-                            <i class="fa-solid fa-right-to-bracket"></i> Login to Dashboard
+                            <i class="fa-solid fa-right-to-bracket"></i> Login
                         </button>
-                        <p style="font-size: 12px; margin-top: 15px; color: #94a3b8;">Demo IDs: 101, 102, 103</p>
                     </div>
                 </div>
 
@@ -238,159 +228,88 @@
                 <p><strong>Student ID:</strong> <span id="user-id">000</span> | <strong>Turning Point Rajshahi</strong></p>
                 <p style="margin-top: 5px;"><i class="fa-solid fa-book-open"></i> Enrolled: <span id="user-batch" style="color:var(--accent); font-weight:600;">-</span></p>
             </div>
-            <button class="btn-logout" onclick="location.reload()">
-                <i class="fa-solid fa-power-off"></i> Logout
-            </button>
+            <button class="btn-logout" onclick="location.reload()">Logout</button>
         </div>
 
         <div class="tab-menu">
-            <button class="tab-btn active" onclick="openTab(event, 'routine')"><i class="fa-regular fa-calendar-days"></i> Class Routine</button>
-            <button class="tab-btn" onclick="openTab(event, 'results')"><i class="fa-solid fa-square-poll-vertical"></i> Exam Results</button>
-            <button class="tab-btn" onclick="openTab(event, 'library')"><i class="fa-solid fa-book-reader"></i> Library Info</button>
-            <button class="tab-btn" onclick="openTab(event, 'materials')"><i class="fa-solid fa-file-pdf"></i> Study Materials</button>
+            <button class="tab-btn active" onclick="openTab(event, 'routine')"><i class="fa-regular fa-calendar-days"></i> Routine</button>
+            <button class="tab-btn" onclick="openTab(event, 'results')"><i class="fa-solid fa-square-poll-vertical"></i> Results</button>
+            <button class="tab-btn" onclick="openTab(event, 'library')"><i class="fa-solid fa-book-reader"></i> Library</button>
         </div>
 
         <div id="routine" class="tab-content active">
             <div class="card">
-                <div class="card-title"><i class="fa-regular fa-calendar-days"></i> My Class Schedule</div>
+                <div class="card-title">Class Schedule</div>
                 <div class="info-row">
                     <div>
-                        <strong>Bank Math Special (BJ-2)</strong>
-                        <p style="font-size: 13px; color: var(--text-light); margin-top: 5px;">Sunday & Tuesday | 3:00 PM - 5:00 PM</p>
+                        <strong>Bank Job Special Routine</strong>
+                        <p style="font-size: 13px; color: var(--text-light); margin-top: 5px;">Current Month</p>
                     </div>
-                    <button class="btn-action"><i class="fa-solid fa-download"></i> Routine</button>
-                </div>
-                <div class="info-row">
-                    <div>
-                        <strong>English Foundation (BJ-1)</strong>
-                        <p style="font-size: 13px; color: var(--text-light); margin-top: 5px;">Monday & Wednesday | 10:00 AM - 12:00 PM</p>
-                    </div>
-                    <button class="btn-action"><i class="fa-solid fa-download"></i> Routine</button>
+                    <a href="1000085863.jpg" download class="btn-action"><i class="fa-solid fa-download"></i> Download</a>
                 </div>
             </div>
         </div>
 
         <div id="results" class="tab-content">
             <div class="card">
-                <div class="card-title"><i class="fa-solid fa-trophy"></i> Model Test & Quiz Results</div>
-                <div class="info-row">
-                    <div>
-                        <strong>Model Test - 15 (Bank SO)</strong>
-                        <p style="font-size: 13px; color: var(--success); margin-top: 5px; font-weight:bold;">Status: Published</p>
-                    </div>
-                    <button class="btn-action">View Marksheet</button>
-                </div>
-                <div class="info-row">
-                    <div>
-                        <strong>Math Special Weekly Quiz - 04</strong>
-                        <p style="font-size: 13px; color: var(--success); margin-top: 5px; font-weight:bold;">Status: Published</p>
-                    </div>
-                    <button class="btn-action">View Marksheet</button>
-                </div>
+                <div class="card-title">Exam Results</div>
+                <p>No results published yet.</p>
             </div>
         </div>
 
         <div id="library" class="tab-content">
             <div class="card">
-                <div class="card-title"><i class="fa-solid fa-book-reader"></i> Library Status</div>
-                <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 20px; border-radius: 8px;">
-                    <h3 style="color: var(--success); margin-bottom: 10px;">Membership Active</h3>
-                    <p style="margin-bottom: 5px;"><strong>Allocated Seat:</strong> <span id="user-lib-seat">B-12</span></p>
-                    <p style="margin-bottom: 5px;"><strong>Access Time:</strong> 8:00 AM - 8:00 PM</p>
-                    <p><strong>Next Renewal Date:</strong> 05 June, 2026</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="materials" class="tab-content">
-            <div class="card">
-                <div class="card-title"><i class="fa-solid fa-file-pdf"></i> Download Resources</div>
-                <div class="info-row">
-                    <span>Bangladesh Bank AD Past Question Analysis.pdf</span>
-                    <button class="btn-action"><i class="fa-solid fa-download"></i></button>
-                </div>
-                <div class="info-row">
-                    <span>Math Shortcut Formula Sheet - Part 1.pdf</span>
-                    <button class="btn-action"><i class="fa-solid fa-download"></i></button>
-                </div>
+                <div class="card-title">Library Info</div>
+                <p>Seat: <span id="user-lib-seat">B-12</span></p>
             </div>
         </div>
 
     </div>
 
     <footer>
-        <p>© 2026 Turning Point Job Aid Rajshahi | Smart Coaching Management Portal</p>
+        <p>© 2026 Turning Point Job Aid Rajshahi</p>
     </footer>
 
     <script>
-        // Student Database Mockup
         const studentDB = {
             "101": { 
-                name: "করিম উদ্দিন (Karim Uddin)", 
+                name: "Karim Uddin", 
                 img: "https://xsgames.co/randomusers/assets/avatars/male/11.jpg",
-                batch: "Bank Special (BJ-1)",
-            },
-            "102": { 
-                name: "সুমাইয়া জান্নাত (Sumaiya Jannat)", 
-                img: "https://xsgames.co/randomusers/assets/avatars/female/12.jpg",
-                batch: "Foundation Batch (BJ-1)",
-                seat: "B-05"
+                batch: "BJ-1", seat: "A-01"
             },
             "103": { 
-                name: "রাকিব হাসান (Rakib Hasan)", 
+                name: "Rakib Hasan", 
                 img: "https://xsgames.co/randomusers/assets/avatars/male/23.jpg",
-                batch: "Exam Batch (BJ-3)",
-                seat: "C-10"
+                batch: "BJ-3", seat: "C-10"
             }
         };
 
         function login() {
             const id = document.getElementById('studentId').value.trim();
-
-            if (id === "") {
-                alert("অনুগ্রহ করে আপনার Student ID (Roll) দিন।");
-                return;
-            }
-
-            // Get student data or use default/guest
+            if (id === "") { alert("Please enter ID."); return; }
             const student = studentDB[id] || {
                 name: "Guest Student",
                 img: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
-                batch: "General Access",
-                seat: "Not Allocated"
+                batch: "General", seat: "N/A"
             };
-
-            // Setup Dashboard Data
             document.getElementById('user-name').innerText = student.name;
             document.getElementById('user-id').innerText = id;
             document.getElementById('user-img').src = student.img;
             document.getElementById('user-batch').innerText = student.batch;
             document.getElementById('user-lib-seat').innerText = student.seat;
-
-            // Switch Views
             document.getElementById('public-view').style.display = 'none';
             document.getElementById('dashboard-view').style.display = 'block';
             window.scrollTo(0, 0);
         }
 
         function openTab(evt, tabName) {
-            // Hide all contents
             const tabContents = document.getElementsByClassName("tab-content");
-            for (let i = 0; i < tabContents.length; i++) {
-                tabContents[i].classList.remove("active");
-            }
-
-            // Remove active class from all buttons
+            for (let i = 0; i < tabContents.length; i++) { tabContents[i].classList.remove("active"); }
             const tabBtns = document.getElementsByClassName("tab-btn");
-            for (let i = 0; i < tabBtns.length; i++) {
-                tabBtns[i].classList.remove("active");
-            }
-
-            // Show current tab and add active class
+            for (let i = 0; i < tabBtns.length; i++) { tabBtns[i].classList.remove("active"); }
             document.getElementById(tabName).classList.add("active");
             evt.currentTarget.classList.add("active");
         }
     </script>
-
 </body>
 </html>
